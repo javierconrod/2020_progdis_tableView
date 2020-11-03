@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7K6-su-vee">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaAlumno" rowHeight="110" id="Ysp-NE-MH9" customClass="celdaAlumnoController" customModule="tableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ysp-NE-MH9" id="w5d-zb-ky1">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Matrícula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkF-RU-DOX">
+                                                    <rect key="frame" x="20" y="78" width="71" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Carrera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-N8-KIG">
+                                                    <rect key="frame" x="336" y="78" width="58" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre de Alumno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbg-Lb-gCm">
+                                                    <rect key="frame" x="20" y="11" width="168" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="e0n-N8-KIG" firstAttribute="bottom" secondItem="w5d-zb-ky1" secondAttribute="bottomMargin" id="0ko-UH-Fsc"/>
+                                                <constraint firstItem="e0n-N8-KIG" firstAttribute="top" secondItem="w5d-zb-ky1" secondAttribute="topMargin" constant="67" id="Dfe-Hi-5JF"/>
+                                                <constraint firstItem="GkF-RU-DOX" firstAttribute="leading" secondItem="w5d-zb-ky1" secondAttribute="leadingMargin" id="Tsl-N3-tWH"/>
+                                                <constraint firstItem="Rbg-Lb-gCm" firstAttribute="leading" secondItem="w5d-zb-ky1" secondAttribute="leadingMargin" id="bus-tG-U9i"/>
+                                                <constraint firstItem="e0n-N8-KIG" firstAttribute="trailing" secondItem="w5d-zb-ky1" secondAttribute="trailingMargin" id="oJW-lQ-fhx"/>
+                                                <constraint firstItem="Rbg-Lb-gCm" firstAttribute="top" secondItem="w5d-zb-ky1" secondAttribute="topMargin" id="ogN-En-GSC"/>
+                                                <constraint firstItem="GkF-RU-DOX" firstAttribute="top" secondItem="Rbg-Lb-gCm" secondAttribute="bottom" constant="43" id="vix-Pz-9ug"/>
+                                                <constraint firstItem="GkF-RU-DOX" firstAttribute="bottom" secondItem="w5d-zb-ky1" secondAttribute="bottomMargin" id="wRf-b5-nPb"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblCarrera" destination="e0n-N8-KIG" id="bnK-4q-zss"/>
+                                            <outlet property="lblMatricula" destination="GkF-RU-DOX" id="2q4-Db-gVm"/>
+                                            <outlet property="lblNombre" destination="Rbg-Lb-gCm" id="OMz-vA-Jjs"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="YRk-Ye-qYE"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7K6-su-vee" secondAttribute="bottom" id="MOh-bn-HCn"/>
+                            <constraint firstItem="7K6-su-vee" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="P1P-mn-UPm"/>
+                            <constraint firstItem="7K6-su-vee" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gL1-cu-d5p"/>
+                            <constraint firstItem="7K6-su-vee" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oTc-YL-x94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
